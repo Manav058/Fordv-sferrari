@@ -1,0 +1,322 @@
+<!-- Your main page should go here -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-left: 20px;
+            background-color: white;
+            color: #fff;
+        }
+
+
+        .logo img {
+            width: 100px;
+        }
+
+        .links a {
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            margin-right: 40px;
+            padding: 4px;
+            font-family: 'poppins';
+        }
+
+        .links a:hover {
+            color: black;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-left: 20px;
+            font-family: 'poppins';
+
+        }
+
+        .box {
+            width: 700px;
+            height: 500px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            color: black;
+            text-align: center;
+            line-height: 100px;
+            margin: 10px;
+            float: left;
+
+
+        }
+
+
+        /* CSS */
+        .button-56 {
+            align-items: center;
+            background-color: yellow;
+            border: 2px solid #111;
+            border-radius: 40px;
+            box-sizing: border-box;
+            color: #111;
+            cursor: pointer;
+            display: flex;
+            font-family: Inter, sans-serif;
+            font-size: 16px;
+            height: 700px;
+            justify-content: center;
+            flex-direction: column;
+            line-height: 24px;
+            max-width: 700px;
+            padding: 0 25px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button-56:after {
+            background-color: #111;
+            border-radius: 40px;
+            content: "";
+            display: block;
+            height: 700px;
+            left: 0;
+            width: 700px;
+            position: absolute;
+            top: -2px;
+            transform: translate(8px, 8px);
+            transition: transform .2s ease-out;
+            z-index: -1;
+        }
+
+        .button-56:hover:after {
+            transform: translate(0, 0);
+        }
+
+        .button-56:active {
+            background-color: #ffdeda;
+            outline: 0;
+        }
+
+        .button-56:hover {
+            outline: 0;
+        }
+
+        @media (min-width: 768px) {
+            .button-56 {
+                padding: 0 40px;
+            }
+        }
+
+
+
+        .button-24 {
+            background: #FF4742;
+            border: 1px solid #FF4742;
+            border-radius: 6px;
+            box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+            font-size: 16px;
+            font-weight: 800;
+            line-height: 40px;
+            min-height: 40px;
+            outline: 0;
+            padding: 12px 14px;
+            height: 50px;
+            width: 100px;
+            margin-right: 20px;
+            text-align: center;
+            text-rendering: geometricprecision;
+            text-transform: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: middle;
+        }
+
+        .button-24:hover,
+        .button-24:active {
+            background-color: initial;
+            background-position: 0 0;
+            color: #FF4742;
+        }
+
+        .button-24:active {
+            opacity: .5;
+        }
+
+
+        /* CSS */
+        .button-54 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            letter-spacing: 2px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+            cursor: pointer;
+            border: 3px solid;
+            padding: 0.25em 0.5em;
+            box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+            position: relative;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button-54:active {
+            box-shadow: 0px 0px 0px 0px;
+            top: 5px;
+            left: 5px;
+        }
+
+        @media (min-width: 768px) {
+            .button-54 {
+                padding: 0.25em 0.75em;
+            }
+        }
+
+
+
+
+
+
+
+
+        /* CSS */
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+
+    <title>Ford V/s Ferrari</title>
+</head>
+
+<body style="height: 4000px;margin-top: 0;">
+    <nav class="navbar">
+        <div class="logo">
+            <!-- <img src="https://live.staticflickr.com/3365/3311766713_b27046636a_b.jpg" alt="fordlogoimg">
+            <span style="font-weight: bold;color:black;">V/s</span>
+            <img style="height: 100px; width: 100px;" src="https://live.staticflickr.com/9/17292238_045bcca48b.jpg"
+                alt="ferrarilogoimg"> -->
+            <a href="index.html"><img style="height: 90px; width: 400px;" src="Ford_v_Ferrari_LOGO.png" alt="img"></a>
+        </div>
+        <div class="links">
+            <a class="button-24" href="about.html">About</a>
+            <a class="button-24" href="honesty.html">Honesty</a>
+        </div>
+
+    </nav>
+    <div style="margin-left: 25%;">
+        <div class="button-56">
+            <div>
+                <iframe style="margin-top: -40%;border-radius: 20px;" width="560" height="315"
+                    src="FORD v FERRARI _ Official Trailer [HD] _ 20th Century FOX.mp4" frameborder="0"
+                    allowfullscreen></iframe>
+                <a href="honesty.html"><button class="button-54">Sources</button></a>
+
+            </div>
+            <div style="margin-bottom: -40%;">
+                <p style="font-family:poppins;font-weight: bold;">In the 1960s, the Ford Motor Company is struggling to
+                    keep up with the
+                    innovative and dominating
+                    presence of Ferrari in the world of motorsport. Seeking to revitalize the company's image and assert
+                    American engineering prowess, Henry Ford II decides to challenge Ferrari at their own game by
+                    entering the prestigious 24 Hours of Le Mans race.To achieve this ambitious goal, Ford enlists the
+                    help of automotive visionary Carroll Shelby, a former race car driver turned designer and
+                    entrepreneur. Shelby is tasked with building a revolutionary racing car capable of defeating
+                    Ferrari's formidable team at Le Mans. He recruits the fiercely talented but volatile British driver
+                    Ken Miles to pilot the car, despite resistance from Ford's executives who doubt Miles' suitability
+                    for the job.</p>
+            </div>
+
+        </div><br><br><br>
+        <div class="button-56">
+            <div>
+                <img style="height: 350px;width: 450px;border-radius: 20px;"
+                    src="https://live.staticflickr.com/65535/49716145153_054b740905_b.jpg" alt="img1"><br>
+                <a href="honesty.html"><button class="button-54">Sources</button></a>
+
+            </div>
+            <div style="margin-bottom: -10%;">
+                <p style="font-family:poppins;font-weight: bold;">Shelby and Miles embark on a grueling journey to
+                    develop and test the new racing car, the Ford GT40. They encounter numerous challenges along the
+                    way, including technical setbacks, corporate interference, and personal conflicts. Despite these
+                    obstacles, Shelby and Miles form a deep bond built on mutual respect and a shared passion for
+                    racing.</p>
+            </div>
+
+        </div><br><br><br>
+        <div class="button-56">
+            <div>
+                <img style="height: 350px;width: 500px;border-radius: 20px;margin-top: -10%;"
+                    src="https://live.staticflickr.com/739/22784787170_8f1a740e76_b.jpg" alt="img2">
+                <a href="honesty.html"><button class="button-54">Sources</button></a>
+
+            </div>
+            <div style="margin-bottom: -10%;">
+                <p style="font-family:poppins;font-weight: bold;">As the pressure mounts, Shelby and Miles face fierce
+                    competition from Ferrari and their legendary driver, Enzo Ferrari. The rivalry between the two
+                    automotive giants intensifies, fueled by egos, corporate agendas, and the desire for glory.</p>
+            </div>
+
+        </div><br><br><br>
+        <div class="button-56">
+            <div>
+                <img style="height: 350px;width: 450px;border-radius: 20px;margin-top: -10%;"
+                    src="https://live.staticflickr.com/65535/49716999177_8900f0618e_b.jpg" alt="img3"><br>
+                <a href="honesty.html"><button class="button-54">Sources</button></a>
+
+            </div>
+            <div style="margin-bottom: -10%;">
+                <p style="font-family:poppins;font-weight: bold;">On race day at Le Mans, Shelby, Miles, and the Ford
+                    team must overcome mechanical failures, strategic setbacks, and the relentless pursuit of victory
+                    from their Italian rivals. In a heart-stopping climax, Miles pushes the GT40 to its limits, battling
+                    against the clock and the elements to secure Ford's place in racing history.</p>
+            </div>
+
+        </div><br><br><br>
+        <div class="button-56">
+            <div>
+                <img style="height: 350px;width: 450px;border-radius: 20px;"
+                    src="https://live.staticflickr.com/65535/49716685561_3561ce54d7_b.jpg" alt="img4"><br>
+                <a href="honesty.html"><button class="button-54">Sources</button></a>
+
+            </div>
+            <div style="margin-bottom: -10%;">
+                <p style="font-family:poppins;font-weight: bold;">In the end, "Ford v Ferrari" is not just a story of
+                    speed and competition but a testament to the power of innovation, teamwork, and the indomitable
+                    human spirit to overcome the odds and achieve greatness on and off the racetrack.</p>
+            </div><br><br><br>
+            <div>
+                <audio controls>
+                    <source src="ford-gt-engine-70457.mp3">
+                </audio>
+            </div>
+
+
+        </div><br><br><br>
+
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
